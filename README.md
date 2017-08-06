@@ -197,9 +197,12 @@ module.exports = {
 - Open `src/index.html` file and add in the `<head>` tag:
 
 ```html
-<link rel="stylesheet" href="/build/font-awesome.min.css">
-<link rel="stylesheet" href="/build/froala_editor.pkgd.min.css">
-<link rel="stylesheet" href="/build/froala_style.min.css">
+<!-- make sure to remove slash before build to make it work on real device with slash will work only locally 
+-- ionic serve (on browser) 
+-- ionic cordova emulate / run / build will not work ! -->
+<link rel="stylesheet" href="build/font-awesome.min.css">
+<link rel="stylesheet" href="build/froala_editor.pkgd.min.css">
+<link rel="stylesheet" href="build/froala_style.min.css">
 ```
 In your desired view add the Froala Editor like this:
 
